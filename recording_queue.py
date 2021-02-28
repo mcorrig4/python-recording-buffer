@@ -1,6 +1,5 @@
 import numpy as np
 
-RECORDING_BUFFER_SIZE = 8
 
 # all operations are O(1) and don't require copying the array
 # except to_array which has to copy the array and is O(n)
