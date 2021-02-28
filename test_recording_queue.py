@@ -1,6 +1,9 @@
 from recording_queue import RecordingQueue
 import numpy as np
 
+
+RECORDING_BUFFER_SIZE = 8
+
 start_data = np.array([
     [1,1],
     [2,2],
