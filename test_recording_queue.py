@@ -1,4 +1,4 @@
-from recording_buffer import RecordingQueue
+from recording_queue import RecordingQueue
 
 start_data = np.array([
     [1,1],
