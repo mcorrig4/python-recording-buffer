@@ -29,6 +29,10 @@ class RecordingQueue:
         # the item we want will be at head + index
         loc = (self.queue_tail + 1 + index) % self.max_length
         return self.rec_queue[loc]
+    def replace_item_at(self, index: int, newItem: int):
+        # the item we want will be at head + index
+        loc = (self.queue_tail + 1 + index) % self.max_length
+        self.rec_queue[loc] = newItem
     def __repr__(self):
         return "tail: " + str(self.queue_tail) + "\narray: " + str(self.rec_queue)
     def __str__(self):
